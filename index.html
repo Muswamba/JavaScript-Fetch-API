@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0" />
+      <title>API Fetch Demo</title>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+      <!-- meta -->
+      <meta
+         name="description"
+         content="API Fetch Demo" />
+      <meta
+         name="keywords"
+         content="HTML, CSS, JavaScript" />
+      <meta
+         name="author"
+         content="Shabani Muswamba" />
+      <link
+         rel="stylesheet"
+         href="style.css" />
+   </head>
+   <body>
+      <div class="top-container">
+         <!-- heading -->
+         <h1>API Fetch Demo</h1>
+         <!-- button -->
+         <button
+            id="theme-toggler"
+            type="button"
+            class="primary-button">
+            <i class="fas fa-moon"></i>
+            Theme
+         </button>
+      </div>
+      <!-- top nav  -->
+      <div class="topnav">
+         <!-- section left -->
+         <div>
+            <a
+               href="#"
+               class="active"
+               >Feed</a
+            >
+            <a href="#">Industry</a>
+            <a href="#">Acive</a>
+         </div>
+         <!-- right section -->
+         <div class="flex justify-end px-2">
+            <!-- search -->
+            <input
+               type="text"
+               name="search"
+               id="filter"
+               class="search"
+               placeholder="Search..." />
+            <!-- buttton -->
+            <button
+               type="button"
+               class="primary-button">
+               <i class="fas fa-search"></i>
+            </button>
+         </div>
+      </div>
+      <!-- main section  -->
+      <main>
+         <!--  -->
+         <div
+            id="loading"
+            class="w-full">
+            <div class="flex justify-center">
+               <div
+                  class="loader"
+                  id="loader"></div>
+            </div>
+         </div>
+
+         <!-- ul data  -->
+         <ul id="data-list">
+            <!-- users list  -->
+         </ul>
+         <!-- modal -->
+         <div
+            id="myModal"
+            class="modal">
+            <div class="modal-content">
+               <!-- header -->
+               <div class="modal-header">
+                  <!-- About user -->
+                  <h2>About user</h2>
+                  <!-- close btn -->
+                  <span class="close">
+                     <i class="fas fa-window-close"></i>
+                  </span>
+               </div>
+               <!-- modal body -->
+               <div class="modal-body">
+                  <!-- user details -->
+               </div>
+
+               <!-- footer -->
+               <div class="modal-footer borber"></div>
+            </div>
+         </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+         <div class="row copyright borber-top">
+            <!-- Menu section -->
+            <div class="footer-menu">
+               <a href="#">Home</a>
+               |
+               <a href="#">About</a>
+               |
+               <a href="#">Contact</a>
+               |
+               <a href="#">Blog</a>
+               |
+               <a href="#">Social</a>
+            </div>
+            <!-- copyright section -->
+            <div>
+               <p class="copyright">
+                  Copyright &copy; 2024
+                  <a
+                     href="http://smsoftware.org"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     >smsoftware</a
+                  >
+               </p>
+            </div>
+         </div>
+      </footer>
+      <!-- cookies -->
+      <div
+         class="cookie-consent-banner"
+         id="cookieBanner">
+         <div class="cookie-consent-banner__inner">
+            <h3 class="cookie-consent-banner__title">
+               THIS WEBSITE USES COOKIES
+            </h3>
+            <p class="cookie-consent-banner__copy">
+               This website uses cookies to ensure you get the best experience
+               on our website
+            </p>
+            <div class="cookie-consent-banner__actions">
+               <a
+                  id="setCookieBtn"
+                  href="#"
+                  class="cookie-consent-banner__cta cookie-consent-banner__cta--primary"
+                  >Accept</a
+               >
+               <a
+                  href="#"
+                  class="cookie-consent-banner__cta cookie-consent-banner__cta--secondary"
+                  >Decline</a
+               >
+            </div>
+         </div>
+      </div>
+      <!-- link to JS  -->
+      <script src="app.js"></script>
+   </body>
+</html>
