@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
    let usersData = [];
 
-   fetch("https://randomuser.me/api?results=200")
+   fetch("https://randomuser.me/api?results=100")
       .then((response) => {
          return response.json();
       })
